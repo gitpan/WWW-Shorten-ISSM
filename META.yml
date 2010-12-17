@@ -18,4 +18,4 @@ requires:
   LWP::Simple: 0
   WWW::Shorten::generic: 0
   perl: 5.006
-version: 0.001
+version: 0.002

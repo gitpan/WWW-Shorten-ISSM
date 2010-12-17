@@ -46,7 +46,7 @@ sub makeashorterlink {
     my $url = shift or croak 'No URL passed to makeashorterlink';
     my $alias = get("http://issm.tk/api/add.pl?url=".$url) or croak('Getting link failed.');
     chomp $alias;
-    return $alias;
+    return 'http://issm.tk/?a='.$alias;
 }
 
 =head2 makealongerlink
@@ -77,6 +77,7 @@ makeashorterlink, makealongerlink
 =head1 AUTHOR
 
 Alexandria Marie Wolcott <alyx@cpan.org>
+
 Aaron Blakley <aaron@ephasic.org>
 
 =head1 SEE ALSO
